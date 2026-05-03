@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
             "Designed for those who demand uncompromising audio performance"
           </span>
           <button className="hidden md:block text-white bg-[#373737] px-5 py-2 mt-5 font-worksans rounded-xl cursor-pointer hover:bg-black transition-colors duration-300">
-            Explore Products
+            <Link to="/#products-page">Explore Products</Link>
           </button>
         </div>
         <div className="md:w-[30%] flex flex-col items-center">
@@ -28,7 +29,7 @@ const Hero = () => {
             className="w-75 h-75 object-cover"
           />
           <button className="md:hidden text-white bg-[#282828] px-3 py-1 rounded-xl mt-10 font-worksans">
-            Explore Products
+            <Link to="/#products-page">Explore Products</Link>
           </button>
         </div>
       </div>
