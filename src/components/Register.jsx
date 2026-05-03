@@ -26,7 +26,7 @@ const Register = () => {
         <button className="text-black bg-white px-5 py-2 my-5 rounded-2xl w-30 font-worksans">
           Register
         </button>
-        <Link to="/register" className="text-white underline cursor-pointer">
+        <Link to="/login" className="text-white underline cursor-pointer">
           Existing User? Log In now.
         </Link>
       </div>
