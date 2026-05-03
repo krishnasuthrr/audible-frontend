@@ -9,7 +9,7 @@ const Hero = () => {
             Immersive Sound,
           </span>{" "}
           <br />
-          <span className="text-3xl lg:text-4xl text-white bg-black rounded px-2 pb-0.5 font-extrabold font-montserrat">
+          <span className="text-3xl lg:text-4xl text-white bg-black rounded px-2 pb-1 font-extrabold font-montserrat">
             Timeless Design.
           </span>
           <h3 className="font-inter pb-3 pt-2 text-[20px] lg:text-[25px] font-medium">
