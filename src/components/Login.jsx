@@ -6,12 +6,14 @@ const Login = () => {
       <div className="w-[80%] md:w-[60%] lg:w-[50%] rounded-2xl h-100 bg-[#1a1a1a] flex flex-col items-center justify-center">
         <input
           type="text"
+          required
           placeholder="Enter Username or Email"
           name="username"
           className="bg-white text-center text-black px-5 py-2 my-3 rounded-xl w-[80%] md:w-[50%]"
         />
         <input
           type="text"
+          required
           placeholder="Enter Password"
           name="password"
           className="bg-white text-center text-black px-5 py-2 rounded-xl w-[80%] md:w-[50%]"

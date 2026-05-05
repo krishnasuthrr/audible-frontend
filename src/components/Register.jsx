@@ -6,8 +6,14 @@ const Register = () => {
       <div className="w-[80%] md:w-[60%] lg:w-[50%] rounded-2xl h-100 bg-[#1a1a1a] flex flex-col items-center justify-center">
         <input
           type="text"
-          placeholder="Enter Username or Email"
+          placeholder="Enter Username"
           name="username"
+          className="bg-white text-center text-black px-5 py-2 rounded-xl w-[80%] md:w-[50%]"
+        />
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
           className="bg-white text-center text-black px-5 py-2 my-3 rounded-xl w-[80%] md:w-[50%]"
         />
         <input

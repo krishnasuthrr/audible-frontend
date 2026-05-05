@@ -126,11 +126,11 @@ const Products = () => {
                 </button>
               </div>
             </div>
-          ))}
+          ))}  
         </div>
       </div>
     </div>
-  );
+  );  // DEBUG - PRODUCTS PAGE STATRING FROM BOTTOM-MOST PRODUCT
 };
 
 export default Products;
