@@ -98,7 +98,7 @@ const Products = () => {
         </div>
 
         {/* Products grid */}
-        <div className="w-full lg:w-[65%] bg-[gainsboro] rounded-2xl p-3 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="w-full lg:w-[65%] bg-[gainsboro] rounded-2xl p-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {bestsellers.map((product, idx) => (
             <div
               key={idx}

@@ -2,16 +2,18 @@
 
 const Features = () => {
   return (
-    <div id="about-page" className="w-full min-h-screen pt-16 flex flex-col items-center justify-center">
+    <div
+      id="about-page"
+      className="w-full min-h-screen pt-16 flex flex-col items-center justify-center"
+    >
       <h1 className="text-4xl font-montserrat font-bold pb-5">Why Audible?</h1>
       <div className="h-[80%] w-[90%] flex flex-col items-center justify-center py-3 gap-3">
-
         <div className="h=[30%] w-full md:w-[80%] rounded-2xl bg-[gainsboro] py-4 flex  md:flex-row items-center justify-evenly">
           <div className="w-[40%] md:w-[50%]">
-            <h1 className="text-xl md:text-4xl w-fit font-lexend bg-black text-white px-3 pb-1 rounded">
+            <h1 className="text-xl md:text-2xl lg:text-4xl w-fit font-lexend bg-black text-white px-3 pb-1 rounded">
               Sleek Design.
             </h1>
-            <p className="text-sm md:text-xl font-inter pt-2">
+            <p className="text-sm md:text-lg lg:text-xl font-inter pt-2">
               Engineered and Crafted for longing Comfort and Feel.
             </p>
           </div>
@@ -29,10 +31,10 @@ const Features = () => {
             className="h-40 md:h-54 w-[30%] object-cover rounded"
           />
           <div className="w-[50%]">
-            <h1 className="text-2xl md:text-4xl bg-white px-3 pb-1 rounded w-fit font-semibold font-lexend">
+            <h1 className="text-xl md:text-2xl lg:text-4xl bg-white px-3 pb-1 rounded w-fit font-semibold font-lexend">
               Pure Auditory Bliss.
             </h1>
-            <p className="text-white text-sm md:text-xl font-inter pt-2">
+            <p className="text-white text-sm md:text-lg lg:text-xl font-inter pt-2">
               Immerse yourself in flawless, high-fidelity audio crafted to
               reveal every hidden layer of sound.
             </p>
@@ -40,11 +42,11 @@ const Features = () => {
         </div>
 
         <div className="h=[30%] w-full md:w-[80%] bg-[gainsboro] py-4 flex flex-col-reverse md:flex-row items-center justify-evenly rounded-2xl">
-          <div className="w-[90%] md:w-[50%] flex flex-row items-center justify-center gap-3 md:flex-col">
-            <h1 className="text-white bg-black px-3 pb-1 w-[40%] md:w-fit rounded text-xl md:text-3xl font-lexend">
+          <div className="w-[90%] md:w-[50%] flex flex-col items-center justify-center gap-3">
+            <h1 className="text-xl md:text-2xl lg:text-3xl bg-black text-white px-3 pb-1 rounded w-fit font-lexend">
               Engineered for Every Obsession.
             </h1>
-            <p className="text-sm w-[60%] md:w-fit md:text-[18px] font-inter md:pt-2">
+            <p className="text-sm w-[90%] text-center md:w-fit md:text-lg font-inter">
               From Sound Bars to Portable Speakers, we build uncompromising
               hardware for those who demand more.
             </p>

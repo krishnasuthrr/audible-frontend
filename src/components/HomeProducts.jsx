@@ -45,45 +45,49 @@ const HomeProducts = () => {
   ];
 
   return (
-    <div
-      id="products-page"
-      className="w-full min-h-screen pt-16 pb-10 flex flex-col items-center"
-    >
-      <h1 className="text-center text-2xl md:text-4xl font-montserrat font-bold pb-5 px-4">
-        Products We Engineered
-      </h1>
+    <div className="w-full flex flex-col items-center">
+      <div
+        id="products-page"
+        className="w-full md:w-[90%] min-h-screen pt-16 pb-10 flex flex-col items-center"
+      >
+        <h1 className="text-center text-2xl md:text-4xl font-montserrat font-bold pb-5 px-4">
+          Products We Engineered.
+        </h1>
 
-      {/* 
+        {/* 
         Mobile:  2 columns, items stack vertically (grid-cols-2)
         Desktop: 4 columns, two visual rows of 4  (md:grid-cols-4)
       */}
-      <div className="w-[95%] grid grid-cols-2 md:grid-cols-4 gap-4">
-        {bestsellers.map((product, idx) => (
-          <div
-            key={idx}
-            className="bg-white border rounded-2xl flex flex-col items-center p-3 gap-3"
-          >
-            {/* aspect-square keeps the image proportional at any width */}
-            <div className="w-full aspect-square overflow-hidden rounded-xl">
-              <img
-                src={product.Img}
-                alt={product.Name}
-                className="w-full h-full object-cover"
-              />
-            </div>
+        <div className="w-[95%] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {bestsellers.map((product, idx) => (
+            <div
+              key={idx}
+              className="bg-white border rounded-2xl flex flex-col items-center p-3 gap-3"
+            >
+              {/* aspect-square keeps the image proportional at any width */}
+              <div className="w-full aspect-square overflow-hidden rounded-xl">
+                <img
+                  src={product.Img}
+                  alt={product.Name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-            <div className="w-full flex flex-col items-center gap-1 px-1">
-              <h2 className="text-center text-xs sm:text-sm md:text-base lg:text-lg font-montserrat font-semibold leading-tight">
-                {product.Name}
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-worksans text-white bg-[#363636] px-2 py-0.5 rounded">
-                ₹{product.Price.toLocaleString("en-IN")}
-              </p>
+              <div className="w-full flex flex-col items-center gap-1 px-1">
+                <h2 className="text-center text-xs sm:text-sm md:text-base lg:text-lg font-montserrat font-semibold leading-tight">
+                  {product.Name}
+                </h2>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-worksans text-white bg-[#363636] px-2 py-0.5 rounded">
+                  ₹{product.Price.toLocaleString("en-IN")}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <Link to="/products" className="text-2xl py-5 underline font-lexend">
+          Explore More Products
+        </Link>
       </div>
-      <Link to="/products" className="text-2xl py-5 underline font-lexend">Explore More Products</Link>
     </div>
   );
 };
